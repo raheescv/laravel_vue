@@ -14,12 +14,19 @@ class ProjectsTableSeeder extends Seeder
     {
         $faker = Faker::create();
         $statuses = ['Waiting for approval', 'Approved', 'In progress'];
-        foreach (range(1, 400) as $index) {
-            DB::table('projects')->insert([
-                'status' => $statuses[shuffle($statuses)],
-                'deadline' => $faker->dateTimeBetween('+1 month', '+2 month'),
-                'budget' => rand(10000, 500000),
-            ]);
+        $data=[];
+        foreach (range(1, 40000) as $index) {
+            $single=[
+            'status' => $statuses[shuffle($statuses)],
+            'deadline' => $faker->dateTimeBetween('+1 month', '+2 month'),
+            'budget' => rand(10000, 500000),
+            ];
+            $data[]=$single;
+            if(count($data)==100){
+                DB::table('projects')->insert($data);   
+                $data=[];
+            }
         }
+        DB::table('projects')->insert($data);
     }
 }

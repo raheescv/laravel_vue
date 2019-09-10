@@ -11,7 +11,7 @@ class TestSeeder extends Seeder
      */
     public function run()
     {
-        for($i=0;$i<=100;$i++){
+        for($i=0;$i<=10;$i++){
             DB::table('posts')->insert([
                 'title' => Str::random(10),
                 'body' => Str::random(100),
