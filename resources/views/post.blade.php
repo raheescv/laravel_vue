@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
         <link href="{{ mix('css/app.css') }}" type="text/css" rel="stylesheet" />
         <meta name="csrf-token" value="{{ csrf_token() }}" />
+        <meta name="csrf-token" content="{{ csrf_token() }}"/>
     </head>
     <body>
         <div id="app">

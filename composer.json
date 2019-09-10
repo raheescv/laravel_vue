@@ -11,6 +11,7 @@
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
         "jamesdordoy/laravelvuedatatable": "^1.1",
+        "laravel-enso/vuedatatable": "^2.0",
         "laravel/framework": "^6.0",
         "laravel/tinker": "^1.0"
     },

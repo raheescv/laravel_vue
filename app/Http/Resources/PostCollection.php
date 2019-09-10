@@ -12,15 +12,8 @@ class PostCollection extends ResourceCollection
      * @param  \Illuminate\Http\Request  $request
      * @return array
      */
-    public function store(Request $request)
+    public function toArray($request)
     {
-      $post = new Post([
-        'title' => $request->get('title'),
-        'body' => $request->get('body')
-      ]);
-
-      $post->save();
-
-      return response()->json('success');
+        return parent::toArray($request);
     }
 }

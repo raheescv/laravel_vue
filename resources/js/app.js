@@ -13,13 +13,12 @@ import axios from 'axios';
 import App from './App.vue';
 Vue.use(VueAxios, axios);
 
-import DataTable from 'laravel-vue-datatable';
-Vue.use(DataTable);
-
 import HomeComponent from './components/HomeComponent.vue';
 import CreateComponent from './components/CreateComponent.vue';
 import IndexComponent from './components/IndexComponent.vue';
 import EditComponent from './components/EditComponent.vue';
+import ProjectComponent from './components/Projects.vue';
+import ProjectsClientSideComponent from './components/ProjectsClientSide.vue';
 
 const routes = [
   {
@@ -41,6 +40,16 @@ const routes = [
       name: 'edit',
       path: '/edit/:id',
       component: EditComponent
+  },
+  {
+      name: 'projects',
+      path: '/projects',
+      component: ProjectComponent
+  },
+  {
+      name: 'ProjectsClientSide',
+      path: '/ProjectsClientSide',
+      component: ProjectsClientSideComponent
   }
 ];
 

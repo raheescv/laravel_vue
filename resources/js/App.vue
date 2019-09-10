@@ -20,6 +20,18 @@
             class="nav-link"
           >Posts</router-link>
         </li>
+        <li class="nav-item">
+          <router-link
+            to="/projects"
+            class="nav-link"
+          >Project</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link
+            to="/ProjectsClientSide"
+            class="nav-link"
+          >ProjectsClientSide</router-link>
+        </li>
       </ul>
     </nav><br />
     <transition name="fsade">
