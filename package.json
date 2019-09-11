@@ -23,7 +23,9 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "laravel-echo": "^1.5.4",
         "laravel-vue-datatable": "^0.3.7",
+        "pusher-js": "^5.0.1",
         "vue": "^2.6.10",
         "vue-axios": "^2.1.4",
         "vue-datatables-net": "^1.2.2",

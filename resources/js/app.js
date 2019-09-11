@@ -19,6 +19,7 @@ import IndexComponent from './components/IndexComponent.vue';
 import EditComponent from './components/EditComponent.vue';
 import ProjectComponent from './components/Projects.vue';
 import ProjectsClientSideComponent from './components/ProjectsClientSide.vue';
+import ChatComponent from './components/ChatApplication/ChatApp.vue';
 
 const routes = [
   {
@@ -50,6 +51,11 @@ const routes = [
       name: 'ProjectsClientSide',
       path: '/ProjectsClientSide',
       component: ProjectsClientSideComponent
+  },
+  {
+      name: 'Chat',
+      path: '/Chat',
+      component: ChatComponent
   }
 ];
 

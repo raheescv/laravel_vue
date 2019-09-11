@@ -9,11 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "barryvdh/laravel-cors": "^0.11.4",
         "fideloper/proxy": "^4.0",
         "jamesdordoy/laravelvuedatatable": "^1.1",
-        "laravel-enso/vuedatatable": "^2.0",
         "laravel/framework": "^6.0",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "pusher/pusher-php-server": "~3.0"
     },
     "require-dev": {
         "facade/ignition": "^1.4",

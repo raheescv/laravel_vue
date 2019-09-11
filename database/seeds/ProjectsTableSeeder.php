@@ -12,10 +12,11 @@ class ProjectsTableSeeder extends Seeder
      */
     public function run()
     {
+        DB::table('projects')->truncate();   
         $faker = Faker::create();
         $statuses = ['Waiting for approval', 'Approved', 'In progress'];
         $data=[];
-        foreach (range(1, 40000) as $index) {
+        foreach (range(1, 4000) as $index) {
             $single=[
             'status' => $statuses[shuffle($statuses)],
             'deadline' => $faker->dateTimeBetween('+1 month', '+2 month'),

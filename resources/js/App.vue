@@ -32,6 +32,12 @@
             class="nav-link"
           >ProjectsClientSide</router-link>
         </li>
+        <li class="nav-item">
+          <router-link
+            to="/Chat"
+            class="nav-link"
+          >Chat</router-link>
+        </li>
       </ul>
     </nav><br />
     <transition name="fsade">

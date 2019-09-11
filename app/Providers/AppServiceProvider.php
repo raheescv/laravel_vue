@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Schema;
+use Auth;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,6 +24,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $credentials=[
+            'email'=>'rahees',
+            'password'=>'asdasd',
+        ];
+        Auth::attempt($credentials);
         Schema::defaultStringLength(191);
     }
 }
