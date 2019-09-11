@@ -1,4 +1,5 @@
 <template>
+
   <div class="chat-app">
     <Conversation
       :contact="selectedContact"

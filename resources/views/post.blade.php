@@ -10,7 +10,7 @@
     </head>
     <body>
         <div id="app">
-          <example-component></example-component>
+          <example-component :user="{{ auth()->user() }}"></example-component>
         </div>
         <script src="{{ mix('js/app.js') }}" type="text/javascript"></script>
     </body>

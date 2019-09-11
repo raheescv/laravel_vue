@@ -24,9 +24,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        
         $credentials=[
-            'email'=>'rahees',
-            'password'=>'asdasd',
+            'email'=>'rgoodwin@example.org',
+            'password'=>'secret',
         ];
         Auth::attempt($credentials);
         Schema::defaultStringLength(191);
